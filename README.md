@@ -560,6 +560,50 @@ Gets the ranking info of a specific player in the given stat leaderboard.
 }
 ```
 
+### Party/CreateParty
+
+Creates a new party for other players to join.
+
+**Auth:** Yes  
+**Version:** 1  
+**Params:**
+
+```json
+{
+  "bForcePartyonix": false
+}
+```
+
+Result:
+
+```json
+{
+  "Responses": [
+    {
+      "ID": 49,
+      "Result": {
+        "Info": {
+          "PartyID": "tHVhOrz4",
+          "CreatedAt": 1563566457,
+          "CreatedByUserID": "Steam|`XXXXXXXXXXXXXXXX`|0",
+          "JoinID": "Dt2ruuPE"
+        },
+        "Members": [
+          {
+            "PartyID": "tHVhOrz4",
+            "UserID": "Steam|XXXXXXXXXXXXXXXX|0",
+            "UserName": "Steam name",
+            "UserPlatform": "Steam",
+            "JoinedAt": 1563566457,
+            "Role": "Owner"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
 ## 1.8. Possible Frequently Asked Questions
 
 **Hello, can I make a trade bot with this???**
